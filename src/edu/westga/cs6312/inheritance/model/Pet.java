@@ -15,8 +15,8 @@ public class Pet {
 	 * Pet constructor 
 	 * @param petName accepts pet's name
 	 * @param petSound accepts the sound pet makes
-	 * @precondition if (name == "" || name == null) 
-	 * @precondition if (sound == "" || sound == null)  
+	 * @precondition if (this.sound == null)
+	 * @precondition if (this.name == null) {  
 	 */
 	public Pet(String petName, String petSound) {
 		if (this.name == null) {
@@ -37,6 +37,22 @@ public class Pet {
 		String stringOutput = "A pet named " + this.name  + " that makes the sound " + this.sound;		
 		return stringOutput;
 	}
+	
+	/** 
+	 * Method returns pet's name
+	 * @return pet's name  
+	 */
+	public String getPetName() {					
+		return this.name;
+	}	
+	
+	/** 
+	 * Method returns pet's sound
+	 * @return pet's sound  
+	 */
+	public String getPetSound() {					
+		return this.name;
+	}	
 	
 
 }

@@ -24,5 +24,41 @@ public class PetWhenCreatePet {
 		String result = dog.toString();		
 		assertEquals(expect, result);	
 	}
+	
+
+	/**
+	 * Test, verify Pet object is correctly created
+	 */		
+	@Test
+	public void testPetWhenCreatePetNalaRoar() {
+		Pet dog = new Pet("Nala", "roar");		
+		String expect = "A pet named Nala that makes the sound roar";
+		String result = dog.toString();		
+		assertEquals(expect, result);	
+	}
+	
+
+	/**
+	 * Test, verify Pet object is correctly created
+	 */		
+	@Test
+	public void testPetWhenCreatePetVioletArf() {
+		Pet dog = new Pet("Violet", "arf");		
+		String expect = "A pet named Violet that makes the sound arf";
+		String result = dog.toString();		
+		assertEquals(expect, result);	
+	}
+	
+
+	/**
+	 * Test, verify Pet object is correctly created
+	 */		
+	@Test
+	public void testPetWhenCreatePetBoltOwloo() {
+		Pet dog = new Pet("Bolt", "owloo");		
+		String expect = "A pet named Bolt that makes the sound owloo";
+		String result = dog.toString();		
+		assertEquals(expect, result);	
+	}	
 
 }
