@@ -51,7 +51,7 @@ public class Pet {
 	 * @return pet's sound  
 	 */
 	public String getPetSound() {					
-		return this.name;
+		return this.sound;
 	}	
 	
 
