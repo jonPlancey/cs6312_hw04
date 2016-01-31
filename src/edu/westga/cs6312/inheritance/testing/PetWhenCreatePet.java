@@ -12,7 +12,7 @@ public class PetWhenCreatePet {
 	 * Test, verify Pet object is correctly created
 	 */		
 	@Test
-	public void testPetWhenCreatePetRalph() {
+	public void testPetWhenCreatePetRalphWoof() {
 		Pet dog = new Pet("Harris", "boo");
 		String expect = "A pet named Ralph that makes the sound woof";
 		String result = dog.toString();
