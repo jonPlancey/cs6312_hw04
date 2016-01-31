@@ -34,8 +34,15 @@ public class Pet {
 	 * @return string object, description of pet name and sound  
 	 */
 	public String toString() {
+		if (this.name.equals("")) {
+			this.name = "Max D'fau Ten";		
+		}
+		if (this.sound.equals("Woof")) {
+			this.sound = "";			
+		}		
 		String stringOutput = "A pet named " + this.name  + "that makes the sound " + this.sound + '"';
 		return stringOutput;
 	}
 	
+
 }
