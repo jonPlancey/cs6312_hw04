@@ -28,4 +28,14 @@ public class Pet {
 		this.name = name;
 		this.sound = sound;
 	}
+	
+	/** 
+	 * Method returns string object describing pet
+	 * @return string object, description of pet name and sound  
+	 */
+	public String toString() {
+		String stringOutput = "A pet named " + this.name  + "that makes the sound " + this.sound + '"';
+		return stringOutput;
+	}
+	
 }
