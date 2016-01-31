@@ -13,34 +13,28 @@ public class Pet {
 	
 	/** 
 	 * Pet constructor 
-	 * @param name accepts pet's name
-	 * @param sound accepts the sound pet makes
+	 * @param petName accepts pet's name
+	 * @param petSound accepts the sound pet makes
 	 * @precondition if (name == "" || name == null) 
 	 * @precondition if (sound == "" || sound == null)  
 	 */
-	public Pet(String name, String sound) {
-		if (this.name.equals("") || this.name == null) {
-			this.name = "";		
+	public Pet(String petName, String petSound) {
+		if (this.name == null) {
+			this.name = "";	
 		}
-		if (this.sound.equals("") || this.sound == null) {
+		if (this.sound == null) {
 			this.sound = "";			
-		}		
-		this.name = name;
-		this.sound = sound;
+		}	
+		this.name = petName;
+		this.sound = petSound;	
 	}
 	
 	/** 
 	 * Method returns string object describing pet
 	 * @return string object, description of pet name and sound  
 	 */
-	public String toString() {
-		if (this.name.equals("")) {
-			this.name = "Max D'fau Ten";		
-		}
-		if (this.sound.equals("Woof")) {
-			this.sound = "";			
-		}		
-		String stringOutput = "A pet named " + this.name  + "that makes the sound " + this.sound + '"';
+	public String toString() {		
+		String stringOutput = "A pet named " + this.name  + " that makes the sound " + this.sound;		
 		return stringOutput;
 	}
 	
