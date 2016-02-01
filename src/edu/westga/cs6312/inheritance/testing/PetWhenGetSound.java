@@ -16,7 +16,7 @@ public class PetWhenGetSound {
 
 
 	/**
-	 * Test, make sure getPetSoun returns
+	 * Test, make sure getPetSound returns
 	 * the correct sound of the created pet
 	 */	
 	@Test
@@ -29,7 +29,7 @@ public class PetWhenGetSound {
 	
 
 	/**
-	 * Test, make sure getPetSoun returns
+	 * Test, make sure getPetSound returns
 	 * the correct sound of the created pet
 	 */		
 	@Test
@@ -42,7 +42,7 @@ public class PetWhenGetSound {
 	
 
 	/**
-	 * Test, make sure getPetSoun returns
+	 * Test, make sure getPetSound returns
 	 * the correct sound of the created pet
 	 */		
 	@Test
@@ -55,7 +55,7 @@ public class PetWhenGetSound {
 	
 
 	/**
-	 * Test, make sure getPetSoun returns
+	 * Test, make sure getPetSound returns
 	 * the correct sound of the created pet
 	 */		
 	@Test

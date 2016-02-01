@@ -19,10 +19,9 @@ public class PetDogWhenCreatePetDogLevel {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetRalphWoofLevel0() {
-		PetDog animal = new PetDog("Harris", "boo", 10);		
-		String expect = "A pet named Harris that makes the sound boo at level 10";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+		PetDog animal = new PetDog("Harris", "boo", 30);		
+		int result = animal.getPetDogLevel();		
+		assertEquals(35, result);	
 	}
 	
 
@@ -32,9 +31,8 @@ public class PetDogWhenCreatePetDogLevel {
 	@Test
 	public void testPetDogWhenCreatePetNalaRoarLevel0() {
 		PetDog animal = new PetDog("Nala", "roar", 20);		
-		String expect = "A pet named Nala that makes the sound roar at level 20";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+		int result = animal.getPetDogLevel();		
+		assertEquals(77, result);	
 	}
 	
 
@@ -43,10 +41,9 @@ public class PetDogWhenCreatePetDogLevel {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetVioletArfLevel0() {
-		PetDog animal = new PetDog("Violet", "arf", 30);		
-		String expect = "A pet named Violet that makes the sound arf at level 30";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+		PetDog animal = new PetDog("Violet", "arf", 10);		
+		int result = animal.getPetDogLevel();		
+		assertEquals(25, result);	
 	}
 	
 
@@ -56,8 +53,7 @@ public class PetDogWhenCreatePetDogLevel {
 	@Test
 	public void testPetDogWhenCreatePetBoltOwlooLevel0() {
 		PetDog animal = new PetDog("Bolt", "owloo", 5);		
-		String expect = "A pet named Bolt that makes the sound owloo at level 5";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+		int result = animal.getPetDogLevel();		
+		assertEquals(10, result);	
 	}	
 }

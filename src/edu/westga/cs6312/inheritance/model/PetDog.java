@@ -37,6 +37,16 @@ public class PetDog extends Pet {
 			this.soundLevel = level;
 		}
 	}
+
+	
+	/** 
+	 * Method returns pet's sound level
+	 * @return pet's sound level  
+	 */
+	public int getPetDogLevel() {					
+		return this.soundLevel;
+	}	
+		
 	
 	/** 
 	 * Method returns pet's name
