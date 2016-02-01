@@ -24,7 +24,7 @@ public class PetDogWhenGetSound {
 	public void testPetDogWhenGetSoundBoo() {
 		PetDog pet = new PetDog("Harris", "boo");		
 		String result = pet.getPetDogSound();		
-		assertEquals(0, result);	
+		assertEquals("boo", result);	
 	}
 	
 
@@ -36,10 +36,13 @@ public class PetDogWhenGetSound {
 	public void testPetDogWhenGetSoundRoar() {
 		PetDog pet = new PetDog("Nala", "roar");		
 		String result = pet.getPetDogSound();		
-		assertEquals(0, result);		
+		assertEquals("roar", result);		
 	}
 	
 
+	
+	
+	
 	/**
 	 * Test, make sure getPetDogSound returns
 	 * the correct sound of the created pet
@@ -48,7 +51,7 @@ public class PetDogWhenGetSound {
 	public void testPetDogWhenGetSoundArf() {
 		PetDog pet = new PetDog("Violet", "arf", 77);		
 		String result = pet.getPetDogSound();		
-		assertEquals(77, result);	
+		assertEquals("arf", result);	
 	}
 	
 
@@ -60,7 +63,34 @@ public class PetDogWhenGetSound {
 	public void testPetDogWhenGetSoundOwloo() {
 		PetDog pet = new PetDog("Bolt", "owloo", 11);		
 		String result = pet.getPetDogSound();		
-		assertEquals(11, result);	
-	}	
+		assertEquals("owloo", result);	
+	}
+	
+
+	
+	
+	
+	/**
+	 * Test, make sure getPetDogSound returns
+	 * the correct sound of the created pet
+	 */		
+	@Test
+	public void testPetDogWhenGetLevel07() {
+		PetDog pet = new PetDog("Violet", "arf", 7);		
+		int result = pet.getPetDogLevel();		
+		assertEquals(7, result);	
+	}
+	
+
+	/**
+	 * Test, make sure getPetDogSound returns
+	 * the correct sound of the created pet
+	 */		
+	@Test
+	public void testPetDogWhenGetLevel01() {
+		PetDog pet = new PetDog("Bolt", "owloo", 1);		
+		int result = pet.getPetDogLevel();		
+		assertEquals(1, result);	
+	}		
 
 }
