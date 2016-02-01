@@ -43,7 +43,7 @@ public class PetDogWhenCreatePetDogLevel {
 	public void testPetDogWhenCreatePetVioletArfLevel0() {
 		PetDog animal = new PetDog("Violet", "arf", 10);		
 		int result = animal.getPetDogLevel();		
-		assertEquals(25, result);	
+		assertEquals(10, result);	
 	}
 	
 
