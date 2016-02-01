@@ -50,7 +50,8 @@ public class PetDog extends Pet {
 	 * Method returns pet's sound
 	 * @return pet's sound  
 	 */
-	public String getPetDogSound() {					
+	public String getPetDogSound() {	
+		System.out.println("petDog class: " + super.getPetSound());
 		return super.getPetSound();
 	}
 	

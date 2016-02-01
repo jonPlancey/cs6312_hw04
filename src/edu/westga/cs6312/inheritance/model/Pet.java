@@ -50,7 +50,8 @@ public class Pet {
 	 * Method returns pet's sound
 	 * @return pet's sound  
 	 */
-	public String getPetSound() {					
+	public String getPetSound() {	
+		System.out.append("pet class: " + this.sound);
 		return this.sound;
 	}	
 	
