@@ -42,7 +42,7 @@ public class PetDog extends Pet {
 	 * Method returns pet's name
 	 * @return pet's name  
 	 */
-	public String getPetName() {					
+	public String getPetDogName() {					
 		return super.getPetName();
 	}	
 	
@@ -50,7 +50,7 @@ public class PetDog extends Pet {
 	 * Method returns pet's sound
 	 * @return pet's sound  
 	 */
-	public String getPetSound() {					
+	public String getPetDogSound() {					
 		return super.getPetSound();
 	}
 	
