@@ -33,7 +33,7 @@ public class PetDog extends Pet {
 	 */
 	public PetDog(String petName, String petSound, int level) {
 		super(petName, petSound);
-		if (level >= 0) {
+		if (level > 0 && level < 10 ) {
 			this.soundLevel = level;
 		}
 	}
@@ -61,7 +61,6 @@ public class PetDog extends Pet {
 	 * @return pet's sound  
 	 */
 	public String getPetDogSound() {	
-		System.out.println("petDog class: " + super.getPetSound());
 		return super.getPetSound();
 	}
 	
