@@ -45,10 +45,10 @@ public class PetWhenGetNameAndSound {
 	 * the correct sound of the created pet
 	 */		
 	@Test
-	public void testPetCatWhenGetSoundArf() {
+	public void testPetCatWhenGetNameArf() {
 		PetCat pet = new PetCat("Violet", "arf");		
-		String expect = "arf";
-		String result = pet.getPetCatSound();		
+		String expect = "Violet";
+		String result = pet.getPetCatName();		
 		assertEquals(expect, result);	
 	}
 	
@@ -58,10 +58,10 @@ public class PetWhenGetNameAndSound {
 	 * the correct sound of the created pet
 	 */		
 	@Test
-	public void testPetCatWhenGetSoundOwloo() {
+	public void testPetCatWhenGetNameBolt() {
 		PetCat pet = new PetCat("Bolt", "owloo");		
-		String expect = "owloo";
-		String result = pet.getPetCatSound();		
+		String expect = "Bolt";
+		String result = pet.getPetCatName();		
 		assertEquals(expect, result);	
 	}	
 

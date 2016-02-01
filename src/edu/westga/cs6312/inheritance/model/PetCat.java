@@ -34,7 +34,7 @@ public class PetCat extends Pet {
 	 */
 	public PetCat(String petName, String petSound, int level) {
 		super(petName, petSound);
-		if (level > 0 && level < 10 ) {
+		if (level > 0 && level < 10) {
 			this.cuteness = level;
 		}
 	}

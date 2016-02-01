@@ -51,7 +51,6 @@ public class Pet {
 	 * @return pet's sound  
 	 */
 	public String getPetSound() {	
-		System.out.println("pet class: " + this.sound);
 		return this.sound;
 	}	
 	
