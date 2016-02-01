@@ -1,13 +1,9 @@
 package edu.westga.cs6312.inheritance.model;
 
-/**
- * Homework 04
- * @author 	cs6312
- * @author 	jim perry, jr.
- * @version	01.30.2016
- */
-public class PetDog extends Pet {
-	private int soundLevel;
+public class PetCat extends Pet {
+
+	
+	private int cuteness;
 	
 
 	/** 
@@ -17,24 +13,22 @@ public class PetDog extends Pet {
 	 * @precondition if (this.sound == null)
 	 * @precondition if (this.name == null) 
 	 */
-	public PetDog(String petName, String petSound) {
+	public PetCat(String petName, String petSound) {
 		super(petName, petSound);
-		this.soundLevel = 0;			
+		this.cuteness = 0;			
 	}
 	
 	/** 
 	 * Pet constructor 
 	 * @param petName accepts pet's name
 	 * @param petSound accepts the sound pet makes
-	 * @param level accepts the pet's volume level 
-	 * @precondition if (this.sound == null)
-	 * @precondition if (this.name == null) 
-	 * @precondition if (this.soundLevel == 0)    
+	 * @param level accepts the cat's cutness level 
+	 * @precondition if (level > 0 && level < 10 )    
 	 */
-	public PetDog(String petName, String petSound, int level) {
+	public PetCat(String petName, String petSound, int level) {
 		super(petName, petSound);
-		if (level > 0 && level < 10) {
-			this.soundLevel = level;
+		if (level > 0 && level < 10 ) {
+			this.cuteness = level;
 		}
 	}
 
@@ -43,8 +37,8 @@ public class PetDog extends Pet {
 	 * Method returns pet's sound level
 	 * @return pet's sound level  
 	 */
-	public int getPetDogLevel() {					
-		return this.soundLevel;
+	public int getCutenessLevel() {					
+		return this.cuteness;
 	}	
 		
 	
@@ -52,7 +46,7 @@ public class PetDog extends Pet {
 	 * Method returns pet's name
 	 * @return pet's name  
 	 */
-	public String getPetDogName() {					
+	public String getPetCatName() {					
 		return super.getPetName();
 	}	
 	
@@ -60,7 +54,7 @@ public class PetDog extends Pet {
 	 * Method returns pet's sound
 	 * @return pet's sound  
 	 */
-	public String getPetDogSound() {	
+	public String getPetCatSound() {	
 		return super.getPetSound();
 	}
 	
@@ -69,6 +63,8 @@ public class PetDog extends Pet {
 	 * @return string object, description of pet name and sound  
 	 */
 	public String toString() {		
-		return super.toString() + " at level " + this.soundLevel;
-	}	
+		return super.toString() + " at level " + this.cuteness;
+	}		
+	
+	
 }

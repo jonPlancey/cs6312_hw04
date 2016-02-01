@@ -19,9 +19,9 @@ public class PetDogWhenCreatePetDogLevel {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetRalphWoofLevel0() {
-		PetDog animal = new PetDog("Harris", "boo", 35);		
+		PetDog animal = new PetDog("Harris", "boo", 3);		
 		int result = animal.getPetDogLevel();		
-		assertEquals(35, result);	
+		assertEquals(3, result);	
 	}
 	
 
@@ -30,9 +30,9 @@ public class PetDogWhenCreatePetDogLevel {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetNalaRoarLevel0() {
-		PetDog animal = new PetDog("Nala", "roar", 77);		
+		PetDog animal = new PetDog("Nala", "roar", 7);		
 		int result = animal.getPetDogLevel();		
-		assertEquals(77, result);	
+		assertEquals(7, result);	
 	}
 	
 
@@ -41,9 +41,9 @@ public class PetDogWhenCreatePetDogLevel {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetVioletArfLevel0() {
-		PetDog animal = new PetDog("Violet", "arf", 10);		
+		PetDog animal = new PetDog("Violet", "arf", 9);		
 		int result = animal.getPetDogLevel();		
-		assertEquals(10, result);	
+		assertEquals(9, result);	
 	}
 	
 
