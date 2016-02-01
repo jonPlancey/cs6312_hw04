@@ -1,9 +1,17 @@
-package edu.westga.cs6312.inheritance.model;
+package edu.westga.cs6312.inheritance.testing;
 
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
+import edu.westga.cs6312.inheritance.model.PetCat;
+
+
+/**
+ * Homework 04 Unit Tests
+ * @author 	cs6312
+ * @author 	jim perry, jr.
+ * @version	01.30.2016
+ */
 public class PetCatWhenGetNameAndSound {
 
 
