@@ -6,7 +6,7 @@ package edu.westga.cs6312.inheritance.model;
  * @author 	jim perry, jr.
  * @version	01.30.2016
  */
-public class PetDog extends Pet{
+public class PetDog extends Pet {
 	private int soundLevel;
 	
 
@@ -26,7 +26,7 @@ public class PetDog extends Pet{
 	 * Pet constructor 
 	 * @param petName accepts pet's name
 	 * @param petSound accepts the sound pet makes
-	 * @param soundLevel accepts the pet's volume level 
+	 * @param level accepts the pet's volume level 
 	 * @precondition if (this.sound == null)
 	 * @precondition if (this.name == null) 
 	 * @precondition if (this.soundLevel == 0)    

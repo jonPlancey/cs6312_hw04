@@ -12,14 +12,14 @@ import edu.westga.cs6312.inheritance.model.PetDog;
  * @author 	jim perry, jr.
  * @version	01.30.2016
  */
-public class PetDogWhenCreatePetDog {
+public class PetDogWhenCreatePetDogLevel {
 
 	/**
 	 * Test, verify PetDog object is correctly created
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetRalphWoofLevel0() {
-		PetDog animal = new PetDog("Harris", "boo");		
+		PetDog animal = new PetDog("Harris", "boo", 10);		
 		String expect = "A pet named Harris that makes the sound boo at level 0";
 		String result = animal.toString();		
 		assertEquals(expect, result);	
@@ -31,7 +31,7 @@ public class PetDogWhenCreatePetDog {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetNalaRoarLevel0() {
-		PetDog animal = new PetDog("Nala", "roar");		
+		PetDog animal = new PetDog("Nala", "roar", 20);		
 		String expect = "A pet named Nala that makes the sound roar at level 0";
 		String result = animal.toString();		
 		assertEquals(expect, result);	
@@ -43,7 +43,7 @@ public class PetDogWhenCreatePetDog {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetVioletArfLevel0() {
-		PetDog animal = new PetDog("Violet", "arf");		
+		PetDog animal = new PetDog("Violet", "arf", 30);		
 		String expect = "A pet named Violet that makes the sound arf at level 0";
 		String result = animal.toString();		
 		assertEquals(expect, result);	
@@ -55,10 +55,9 @@ public class PetDogWhenCreatePetDog {
 	 */		
 	@Test
 	public void testPetDogWhenCreatePetBoltOwlooLevel0() {
-		PetDog animal = new PetDog("Bolt", "owloo");		
+		PetDog animal = new PetDog("Bolt", "owloo", 5);		
 		String expect = "A pet named Bolt that makes the sound owloo at level 0";
 		String result = animal.toString();		
 		assertEquals(expect, result);	
 	}	
-
 }
