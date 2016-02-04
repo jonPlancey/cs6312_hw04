@@ -41,8 +41,7 @@ public class PetCatWhenGetNameAndSound {
 	}
 	
 
-	
-	
+		
 	/**
 	 * Test, make sure getCutenessLevel returns
 	 * the correct sound of the created pet
