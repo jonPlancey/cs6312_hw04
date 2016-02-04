@@ -33,10 +33,13 @@ public class Pet {
 	 * Method returns string object describing pet
 	 * @return string object, description of pet name and sound  
 	 */
-	public String toString() {		
+	
+	@Override
+	public String toString() {
 		String stringOutput = "A pet named " + this.name  + " that makes the sound " + this.sound;		
-		return stringOutput;
+		return stringOutput;	
 	}
+
 	
 	/** 
 	 * Method returns pet's name
@@ -45,7 +48,8 @@ public class Pet {
 	public String getPetName() {					
 		return this.name;
 	}	
-	
+
+
 	/** 
 	 * Method returns pet's sound
 	 * @return pet's sound  

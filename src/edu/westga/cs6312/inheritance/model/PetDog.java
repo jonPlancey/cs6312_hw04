@@ -33,11 +33,19 @@ public class PetDog extends Pet {
 	 */
 	public PetDog(String petName, String petSound, int level) {
 		super(petName, petSound);
-		if (level > 0 && level < 10) {
+		this.setPetDogLevel(level);
+	}
+
+	
+	/** 
+	 * Method sets animal sound level
+	 * @param level  of sound to be set  
+	 */	
+	public void setPetDogLevel(int level) {					
+		if ((int) Math.round(level) > 0 && (int) Math.round(level) < 10) {
 			this.soundLevel = level;
 		}
 	}
-
 	
 	/** 
 	 * Method returns pet's sound level

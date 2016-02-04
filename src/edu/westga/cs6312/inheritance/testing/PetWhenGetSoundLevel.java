@@ -11,7 +11,7 @@ import edu.westga.cs6312.inheritance.model.PetCat;
  * @author 	jim perry, jr.
  * @version	01.30.2016
  */
-public class PetWhenGetNameAndSound {
+public class PetWhenGetSoundLevel {
 
 
 	/**

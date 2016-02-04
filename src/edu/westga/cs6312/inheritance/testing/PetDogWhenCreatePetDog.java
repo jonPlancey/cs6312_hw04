@@ -24,7 +24,7 @@ public class PetDogWhenCreatePetDog {
 		String result = animal.toString();		
 		assertEquals(expect, result);	
 	}
-	
+
 
 	/**
 	 * Test, verify PetDog object is correctly created
@@ -39,26 +39,55 @@ public class PetDogWhenCreatePetDog {
 	
 
 	/**
-	 * Test, verify PetDog object is correctly created
+	 * Test, verify PetDog object is correctly create dwith sound level
 	 */		
 	@Test
-	public void testPetDogWhenCreatePetVioletArfLevel0() {
-		PetDog animal = new PetDog("Violet", "arf");		
-		String expect = "A pet named Violet that makes the sound arf at level 0";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+	public void testPetDogWhenCreatePetVioletArfLeve05() {
+		PetDog animal = new PetDog("Violet", "arf", 5);		
+		int result = animal.getPetDogLevel();		
+		assertEquals(5, result);
 	}
 	
 
 	/**
-	 * Test, verify PetDog object is correctly created
+	 * Test, verify PetDog object is correctly created with sound level
 	 */		
 	@Test
-	public void testPetDogWhenCreatePetBoltOwlooLevel0() {
-		PetDog animal = new PetDog("Bolt", "owloo");		
-		String expect = "A pet named Bolt that makes the sound owloo at level 0";
-		String result = animal.toString();		
-		assertEquals(expect, result);	
+	public void testPetDogWhenCreatePetBoltOwlooLeve08() {
+		PetDog animal = new PetDog("Bolt", "owloo", 8);		
+		int result = animal.getPetDogLevel();		
+		assertEquals(8, result);
 	}	
+	
+	
+	
 
+	/**
+	 * Test, verify PetDog object is correctly created
+	 * and dog levels can be changed
+	 */		
+	@Test
+	public void testPetDogWhenCreatePetRalphWoofLeve09() {
+		PetDog animal = new PetDog("Harris", "boo", 2);		
+		animal.setPetDogLevel(9);
+		int result = animal.getPetDogLevel();		
+		assertEquals(9, result);	
+	}
+	
+	
+
+	/**
+	 * Test, verify PetDog object is correctly created
+	 * and dog levels can be changed
+	 */			
+	@Test
+	public void testPetDogWhenCreatePetRalphWoofLeve04() {
+		PetDog animal = new PetDog("Harris", "boo", 11);		
+		animal.setPetDogLevel(4);
+		int result = animal.getPetDogLevel();	
+		System.out.println(result);
+		assertEquals(4, result);	
+	}		
+	
+	
 }
